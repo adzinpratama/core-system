@@ -1,0 +1,34 @@
+{
+    "name": "adzinpratama/core-system",
+    "description": "Laravel Starter Core System",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "AdzinPratama\\CoreSystem\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Hilmi Adzin",
+            "email": "hilmiadzipratama@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "laravel/framework": "^9.19"
+    },
+    "config": {
+        "allow-plugins": {
+            "kylekatarnls/update-helper": true
+        }
+    },
+    "extra": {
+        "laravel":{
+            "providers":[
+                "AdzinPratama\\CoreSystem\\Providers\\CoreSystemServiceProvider"
+            ]
+        }
+    }
+
+}
