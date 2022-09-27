@@ -13,15 +13,17 @@ class CoreSystemServiceProvider extends ServiceProvider
      *  */
     public function boot()
     {
-        $this->loadViewsFrom(__DIR__ . '/Views', 'coresystem');
-        $this->loadMigrationsFrom(__DIR__ . '/Database/migrations');
-        $this->loadTranslationsFrom(__DIR__ . '/Lang', 'coresystem');
+        $this->loadViewsFrom(__DIR__ . '/../Views', 'coresystem');
+        $this->loadMigrationsFrom(__DIR__ . '/../Database/migrations');
+        $this->loadTranslationsFrom(__DIR__ . '/../Lang', 'coresystem');
         $this->loadRoutesFrom(__DIR__ . '/../Routes/web.php');
     }
 
     public function register()
     {
         // $this->app->register(RouteServiceProvider::class);
-        require __DIR__ . '/Helpers/Helper.php';
+        require __DIR__ . '/../Helpers/Helper.php';
+
+        // $this->app->register(RouteServiceProvider::class);
     }
 }

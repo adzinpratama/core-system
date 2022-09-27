@@ -12,6 +12,6 @@ if (!function_exists('core_path')) {
 
     function core_path($path)
     {
-        return __DIR__ . '../' . $path;
+        return __DIR__ . "/../" . $path;
     }
 }
